@@ -79,7 +79,7 @@ textarea {
 }
 
 .heading-sec__mb-bg {
-  margin-bottom: 11rem;
+  margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -209,7 +209,7 @@ textarea {
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 8.5rem 0;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1080,5 +1080,87 @@ textarea {
 
     max-width: 75%;
 
+  }
+}
+
+
+.experience__content {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+.experience {
+  background-size: cover;
+  background-position: center;
+  padding-top: 6rem;
+  scroll-margin-top: 7rem;  
+}
+
+.experience__row {
+  background: #ffffff;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience__row:last-child {
+  margin-bottom: 0;
+}
+
+.experience__row-content-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.experience__row-content-company {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.experience__row-content-duration {
+  font-size: 1.6rem;
+  color: #5a5959;
+  margin-bottom: 2rem;
+}
+
+.experience__row-content-desc {
+  font-size: 1.8rem;
+  color: #666;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  list-style-type: disc;
+  margin-left: 2rem;
+}
+
+.experience__row-content-desc li {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .experience__row {
+    padding: 1rem;
+  }
+  
+  .experience__row-content-title {
+    font-size: 1.5rem;
+  }
+  
+  .experience__row-content-company {
+    font-size: 1.6rem;
+  }
+  
+  .experience__row-content-duration {
+    font-size: 1.4rem;
+  }
+  
+  .experience__row-content-desc {
+    font-size: 1.4rem;
   }
 }

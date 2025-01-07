@@ -30,6 +30,7 @@
         <ul class="header__links">
           <li class="header__link-wrapper"><a href="./index.html" class="header__link"> Home </a></li>
           <li class="header__link-wrapper"><a href="./index.html#about" class="header__link">About </a></li>
+          <li class="header__link-wrapper"><a href="./index.html#experience" class="header__link">Experience </a></li>
           <li class="header__link-wrapper"><a href="./index.html#projects" class="header__link"> Projects </a></li>
           <li class="header__link-wrapper"><a href="./index.html#contact" class="header__link"> Contact </a></li>
         </ul>
@@ -47,6 +48,7 @@
         <ul class="header__sm-menu-links">
           <li class="header__sm-menu-link"><a href="./index.html"> Home </a></li>
           <li class="header__sm-menu-link"><a href="./index.html#about"> About </a></li>
+          <li class="header__sm-menu-link"><a href="./index.html#experience"> Experience </a></li>
           <li class="header__sm-menu-link"><a href="./index.html#projects"> Projects </a></li>
           <li class="header__sm-menu-link"><a href="./index.html#contact"> Contact </a></li>
         </ul>
@@ -57,13 +59,13 @@
 
     <div class="profile-div">
       <img src="./assets/png/profile.png" alt="S A Sreejith Profile Picture" class="my-profile-pic">
-      <h1 class="heading-primary">Hey, My name is S A Sreejith</h1>
-      <p class="text-primary">
+      <h1 class="heading-primary" data-aos="fade-up" data-aos-duration="1000">Hey, My name is S A Sreejith</h1>
+      <p class="text-primary" data-aos="fade-up" data-aos-duration="1000">
         A Computer Science graduate passionate about programming, designing and Web Development<br>
         A portfolio demonstrating my skills and projects
       </p>
       <div class="home-hero__cta">
-        <a href="./#projects" class="btn btn--bg">Projects</a>
+        <a href="./#projects" class="btn btn--bg" data-aos="fade-up" data-aos-duration="1000">Projects</a>
       </div>
     </div>
     <div class="home-hero__socials">
@@ -137,6 +139,35 @@
       </div>
     </div>
   </section>
+
+<section id="experience" class="experience">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span class="heading-sec__main">Experience</span>
+      <span class="heading-sec__sub">
+        Here you will find information about my professional experience
+      </span>
+    </h2>
+
+    <div class="experience__content">
+      <div class="experience__row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="experience__row-content">
+          <h3 class="experience__row-content-title">Associate Analyst</h3>
+          <p class="experience__row-content-company">GlobalLogic Technologies Private Limited </p>
+          <p class="experience__row-content-duration">June 2024 - September 2024</p>
+          <ul class="experience__row-content-desc">
+            <li>Training Artificial Intelligence : (ML-Ops) with the content description and worked on several Ad-hoc processes.</li>
+            <li>Research and Machine Learning : Improved team efficiency by 20% and reduced manual efforts by 10% by creating automated dashboards for data tracing and management.</li>
+            <li>Cultivated a collaborative team environment, fostering participation in diverse learning and development sessions.</li>
+            <!-- <li>Worked with REST APIs using Postman for testing and integration</li> -->
+          </ul>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
   <section id="projects" class="projects sec-pad">
     <div class="main-container">
       <h2 class="heading heading-sec heading-sec__mb-bg">
@@ -278,6 +309,9 @@
 
   <script src="./index.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
