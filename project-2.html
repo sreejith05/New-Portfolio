@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Probability of default of credit card clients using AI</title>
-    <meta name="description" content="Case study page of Project" />
+    <title>Credit Card Default Prediction</title>
+    <meta name="description" content="Case study page of Credit Card Default Prediction Project" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +19,7 @@
   </head>
   <body>
     <header class="header">
+      <!-- Same header structure as previous project pages -->
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
@@ -60,21 +62,19 @@
           </div>
         </div>
       </div>
+      <!-- Mobile Menu -->
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
             <li class="header__sm-menu-link">
               <a href="./index.html"> Home </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> About </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
@@ -82,102 +82,110 @@
         </div>
       </div>
     </header>
-    <section class="project-cs-hero">
+
+    <!-- Hero Section with AOS Animations -->
+    <section class="project-cs-hero" data-aos="fade-up" data-aos-duration="1000">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Probability of default of credit card clients</h1>
+        <h1 class="heading-primary">Credit Card Default Prediction</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Led AI-based credit risk assessment project, predicting default probability for credit card clients. Utilized machine learning algorithms, data preprocessing, and feature engineering to analyze historical data. Achieved 85% accuracy in identifying defaulters. Collaborated with cross-functional teams to deploy the model for real-time decision-making.
+            AI-powered credit risk assessment project predicting default probability for credit card clients using advanced machine learning techniques.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://github.com/sreejith05/Credit-card" class="btn btn--bg" target="_blank">Code Link</a>
+          <a href="#" class="btn btn--bg" target="_blank">Project Details</a>
         </div>
       </div>
     </section>
-    <section class="project-details">
+
+    <!-- Project Details Section -->
+    <section class="project-details" data-aos="fade-up" data-aos-duration="1000">
       <div class="main-container">
         <div class="project-details__content">
+          <!-- Project Showcase Image with Interaction -->
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/54-shutterstock.jpg"
-              alt="Project Image"
-              class="project-details__showcase-img"
+              alt="Credit Card Default Prediction Project"
+              class="project-details__showcase-img interactive-project-image"
             />
           </div>
+
           <div class="project-details__content-main">
+            <!-- Project Overview -->
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                <strong>Objective</strong><br>
-                The primary objective of this study is to develop data-driven predictive models to identify credit card defaulters. The dataset includes various attributes such as limit balance, age, sex, amount of bill statement, repayment status, and amount of previous payment. The aim is to determine the strongest predictors of default and to predict which customers are likely to default on their credit card payments.<br>
+                <strong>Project Objective</strong><br>
+                Developed an advanced machine learning model to predict the probability of credit card client defaults, leveraging data-driven insights to mitigate financial risks.
 
-                <strong>Dataset</strong><br>
-                The study utilizes the UCI dataset, which contains information about credit card clients and their historical transactions. Key features include demographic details, credit limits, and payment behaviors.<br>
-
-                <strong>Methodology</strong><br>
-                Multiple machine learning models are trained and evaluated to predict credit card defaults. The models employed in this study include:<br>
-
-                Logistic Regression<br>
-                K-Nearest Neighbors (KNN)<br>
-                Decision Tree<br>
-                Naïve Bayes<br>
-                Random Forest<br>
-                <strong>Methods</strong> <br>
-                These models are trained using repeated cross-validation and evaluated on a testing set. The study also applies data preprocessing techniques such as Principal Component Analysis (PCA) to handle dataset imbalance issues through oversampling and undersampling.<br>
-
-                <strong>Tools and Environment</strong><br>
-                The analysis is conducted using Python, leveraging several machine learning and statistical libraries:<br>
-
-                <u>scikit-learn:</u> For implementing machine learning algorithms<br>
-                <u>numpy and pandas:</u> For data manipulation and analysis<br>
-                <u>imblearn:</u> For handling imbalanced datasets<br>
-                <u>matplotlib and seaborn:</u> For data visualization<br>
+                <strong>Key Methodologies</strong>
+                - Comprehensive data preprocessing
+                - Feature engineering
+                - Multiple machine learning algorithms
+                - Predictive modeling
+                - Performance evaluation
               </p>
               <p class="project-details__desc-para">
-                <strong>Results</strong><br>
-                The base model achieved an R-square value of 81% using all variables without any preprocessing. Data preprocessing, including PCA, slightly improved the model performance and reduced computational cost. Oversampling techniques performed marginally better than undersampling due to training on a larger dataset. All implemented models yielded comparable accuracy results.<br>
-
-                <strong>Conclusion</strong><br>
-                The study successfully identifies key drivers of credit card default and demonstrates the effectiveness of various supervised learning algorithms in predicting default. Data preprocessing and balancing techniques enhance model performance, although all models show similar accuracy. The findings highlight the potential of machine learning in financial risk management, particularly in automating the prediction of credit card defaults.
+                <strong>Technical Implementation</strong><br>
+                - Utilized Python for data analysis and model development
+                - Implemented various machine learning algorithms
+                - Conducted thorough data cleaning and feature selection
+                - Achieved 85% accuracy in default prediction
               </p>
             </div>
+
+            <!-- Skills Used -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">SKILLS</h3>
+              <h3 class="project-details__content-title">Skills & Technologies</h3>
               <div class="skills">
-                <div class="skills__skill">Python</div>
-                <div class="skills__skill">Python Libraries and Frameworks</div>
-                <div class="skills__skill">Supervised Learning Algorithms</div>
-                <div class="skills__skill">Feature Engineering</div>
-                <div class="skills__skill">Data Preprocessing</div>
-                <div class="skills__skill">Model Evaluation and Validation</div>
-                <div class="skills__skill">Mathematics and Statistics</div>
-                <div class="skills__skill">Critical Thinking</div>
-                <div class="skills__skill">Problem-Solving</div>
-                <div class="skills__skill">Communication</div>
-                <div class="skills__skill">Collaboration</div>
-                <div class="skills__skill">Project Management</div>
+                <div class="skills__skill" data-skill="Python">
+                  <div class="skills__skill-content">
+                    <img src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png" alt="Python">
+                    
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="Machine Learning">
+                  <div class="skills__skill-content">
+                    <img src="https://static.vecteezy.com/system/resources/previews/035/742/223/non_2x/artificial-intelligent-icon-line-icon-for-your-website-mobile-presentation-and-logo-design-vector.jpg" alt="Machine Learning">
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="Data Analysis">
+                  <div class="skills__skill-content">
+                    <img src="https://media.istockphoto.com/id/925690772/vector/icon-icon-with-the-concept-of-searching-analyzing-for-business-finance-and-marketing.jpg?s=612x612&w=0&k=20&c=eYqm89QSN6MWpXRICxTCCQdX6o-mg-Lu9rZLWK6WNgM=" alt="Data Analysis">
+                    
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="Scikit-learn">
+                  <div class="skills__skill-content">
+                    <img src="https://avatars.githubusercontent.com/u/17349883?s=280&v=4" alt="Scikit-learn">
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Project Links -->
             <div class="project-details__links">
-              <!-- <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Project Resources</h3>
               <a
                 href="#"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
-              > -->
+                >Project Report</a
+              >
               <a
-                href="https://github.com/sreejith05/Credit-card"
+                href="#"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
+                >GitHub Repository</a
               >
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer (same as other pages) -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -190,37 +198,23 @@
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="LinkedIn"
                 />
               </a>
               <a target="_blank" rel="noreferrer" href="https://github.com/sreejith05">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
-                  alt="icon"
+                  alt="GitHub"
                 />
               </a>
               <a target="_blank" rel="noreferrer" href="mailto:sreejithsachu2002@gmail.com">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/gmailpic1.png"
-                  alt="icon"
+                  alt="Email"
                 />
               </a>
-              <!-- <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a> -->
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
@@ -233,12 +227,17 @@
 
         <div class="main-footer__lower">
           &copy; Copyright 2024. Made by
-          <a rel="noreferrer" target="_blank" href="#"
-            >S A Sreejith</a
-          >
+          <a rel="noreferrer" target="_blank" href="#">S A Sreejith</a>
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js"></script>
+    <script src="./animations.js"></script>
   </body>
 </html>

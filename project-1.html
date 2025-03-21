@@ -82,7 +82,7 @@
         </div>
       </div>
     </header>
-    <section class="project-cs-hero">
+    <section class="project-cs-hero" data-aos="fade-up" data-aos-duration="1000">
       <div class="project-cs-hero__content">
         <h1 class="heading-primary">Weather App</h1>
         <div class="project-cs-hero__info">
@@ -95,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section class="project-details">
+    <section class="project-details" data-aos="fade-up" data-aos-duration="1000">
       <div class="main-container">
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
@@ -140,13 +140,38 @@
                 The Weather Application successfully combines modern web technologies to deliver a user-friendly and informative weather service. By integrating real-time data with a responsive and interactive design, users can effortlessly stay informed about weather conditions, forecasts, and other critical weather-related information.
               </p>
             </div>
+            <div class="project-details__showcase-img-cont">
+              <img
+                src="./assets/jpeg/Capture1.JPG"
+                alt="Project Image"
+                class="project-details__showcase-img interactive-project-image"
+              />
+            </div>
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Skills</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">API Integration</div>
+                <div class="skills__skill" data-skill="HTML">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="HTML">
+                    
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="CSS">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582747_1280.png" alt="CSS">
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="JavaScript">
+                  <div class="skills__skill-content">
+                    <img src="https://static.vecteezy.com/system/resources/previews/027/127/463/non_2x/javascript-logo-javascript-icon-transparent-free-png.png" alt="JavaScript">
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="API">
+                  <div class="skills__skill-content">
+                    <img src="https://www.shutterstock.com/image-vector/api-application-interface-icon-simple-600nw-2188533787.jpg" alt="API Integration">
+                  </div>
+                </div>
+              </div>
               
               </div>
             </div>
@@ -198,20 +223,7 @@
                   alt="icon"
                 />
               </a>
-              <!-- <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon"
-                  src="./assets/png/yt-ico.png"
-                  alt="icon"
-                />
-              </a> -->
-              <!-- <a target="_blank" rel="noreferrer" href="#">
-                <img
-                  class="main-footer__icon main-footer__icon--mr-none"
-                  src="./assets/png/insta-ico.png"
-                  alt="icon"
-                />
-              </a> -->
+              
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
@@ -231,5 +243,10 @@
       </div>
     </footer>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="./animations.js"></script>
   </body>
 </html>

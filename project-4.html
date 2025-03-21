@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Portfolio Website</title>
-    <meta name="description" content="Case study page of Project" />
+    <meta name="description" content="Case study page of Portfolio Website Project" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -66,15 +67,12 @@
             <li class="header__sm-menu-link">
               <a href="./index.html"> Home </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#about"> About </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#projects"> Projects </a>
             </li>
-
             <li class="header__sm-menu-link">
               <a href="./index.html#contact"> Contact </a>
             </li>
@@ -82,87 +80,115 @@
         </div>
       </div>
     </header>
-    <section class="project-cs-hero">
+
+    <!-- Hero Section with AOS Animations -->
+    <section class="project-cs-hero" data-aos="fade-up" data-aos-duration="1000">
       <div class="project-cs-hero__content">
         <h1 class="heading-primary">Portfolio Website</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Developed a comprehensive personal portfolio website to showcase skills, projects, and professional background. The website serves as an interactive resume, providing potential employers and clients with an in-depth look at capabilities.
+            A comprehensive personal portfolio website showcasing skills, projects, and professional journey using modern web technologies.
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://sasreejith.netlify.app/" class="btn btn--bg" target="_blank">Live Link</a>
+          <a href="https://sasreejith.netlify.app/" class="btn btn--bg" target="_blank">Live Website</a>
         </div>
       </div>
     </section>
-    <section class="project-details">
+
+    <!-- Project Details Section -->
+    <section class="project-details" data-aos="fade-up" data-aos-duration="1000">
       <div class="main-container">
         <div class="project-details__content">
+          <!-- Project Showcase Image with Interaction -->
           <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/Portfolio.JPG"
-              alt="Project Image"
-              class="project-details__showcase-img"
+              alt="Portfolio Website Project"
+              class="project-details__showcase-img interactive-project-image"
             />
           </div>
+
           <div class="project-details__content-main">
+            <!-- Project Overview -->
             <div class="project-details__desc">
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
-                <strong>Overview</strong><br>
-                Created a sophisticated personal portfolio website designed to showcase professional skills, completed projects, and academic background. This website functions as an interactive resume, offering potential employers and clients a comprehensive overview of qualifications and capabilities.<br>
+                <strong>Project Purpose</strong><br>
+                Developed a modern, responsive personal portfolio website to showcase professional skills, projects, and personal brand. The website serves as a comprehensive digital resume and project showcase.
 
-                <strong>Technologies Used</strong><br>
-
-                <u>HTML:</u> Structured the content and layout of the website.<br>
-                <u>CSS:</u> Styled the website with a responsive design to ensure compatibility across various devices and screen sizes.<br>
-                <u>SCSS (Sass):</u> Utilized SCSS for more efficient and maintainable styling. Implemented variables, nesting, and mixins to streamline the CSS code and enhance its reusability and readability.<br>
-                <u>JavaScript:</u> Enhanced interactivity and functionality, including dynamic content loading and form validation.<br>
-                <u>GitHub:</u> Managed version control and facilitated collaboration through repositories.<br>
-
+                <strong>Key Objectives</strong>
+                - Create a visually appealing and professional online presence
+                - Demonstrate web development skills
+                - Provide easy access to projects and contact information
+                - Implement responsive and interactive design
               </p>
               <p class="project-details__desc-para">
-                <strong>Key Features</strong><br>
-
-                <u>Responsive Design:</u> Implemented a fluid layout using CSS media queries to adapt the website's appearance for optimal viewing on phones, tablets, and desktops.<br>
-                <u>Project Showcase:</u> Developed dedicated sections for showcasing personal projects. Each project includes a detailed description, technologies used, and a case study link for an in-depth analysis.<br>
-                <u>About Me Section:</u> Provided a comprehensive overview of academic background, professional experience, and personal skills, highlighting a BSc in Computer Science and proficiency in various programming languages.<br>
-                <u>Skills Section:</u> Listed technical skills and tools, such as HTML, CSS, JavaScript, Python, Java, Git, MySQL, Visual Studio Code, and Postman, demonstrating a broad range of expertise.<br>
-                <u>Contact Form:</u> Integrated a fully functional contact form to facilitate direct communication from potential employers and clients, with fields for name, email, and message.<br>
-                <u>Social Media Integration:</u> Linked to professional profiles on LinkedIn, GitHub, and email, allowing visitors to connect easily and view additional work and contributions.<br>
-                <u>Custom Graphics and Icons:</u> Used custom graphics and icons for a polished and professional visual presentation, including profile images and social media icons.<br>
-                <u>Smooth Navigation:</u> Ensured user-friendly navigation with a fixed header menu, internal links, and smooth scrolling effects for a seamless browsing experience.<br>
+                <strong>Design and Development Approach</strong><br>
+                - Implemented a mobile-first, responsive design
+                - Used semantic HTML5 for structure
+                - Created custom CSS for styling and animations
+                - Developed interactive elements using JavaScript
+                - Ensured cross-browser compatibility
+                - Focused on performance and user experience
               </p>
             </div>
+
+            <!-- Skills Used -->
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools Used</h3>
+              <h3 class="project-details__content-title">Skills & Technologies</h3>
               <div class="skills">
-                <div class="skills__skill">HTML</div>
-                <div class="skills__skill">CSS</div>
-                <div class="skills__skill">JavaScript</div>
-                <div class="skills__skill">SASS</div>
-                <div class="skills__skill">GitHub</div>
+                <div class="skills__skill" data-skill="HTML">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/html5-40-1175193.png" alt="HTML">
+                    
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="CSS">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/css3-11-1175239.png" alt="CSS">
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="JavaScript">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-24-1174950.png" alt="JavaScript">
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="SASS">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/sass-226054.png" alt="SASS">
+                  </div>
+                </div>
+                <div class="skills__skill" data-skill="GitHub">
+                  <div class="skills__skill-content">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="GitHub">
+                  </div>
+                </div>
               </div>
             </div>
+
+            <!-- Project Links -->
             <div class="project-details__links">
-              <h3 class="project-details__content-title">See Live</h3>
+              <h3 class="project-details__content-title">Project Resources</h3>
               <a
                 href="https://sasreejith.netlify.app/"
                 class="btn btn--med btn--theme project-details__links-btn"
                 target="_blank"
-                >Live Link</a
+                >Live Website</a
               >
               <a
-                href="https://github.com/sreejith05/New-Portfolio"
+                href="https://github.com/sreejith05/portfolio"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
-                >Code Link</a
+                >Source Code</a
               >
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -175,24 +201,23 @@
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
-                  alt="icon"
+                  alt="LinkedIn"
                 />
               </a>
               <a target="_blank" rel="noreferrer" href="https://github.com/sreejith05">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
-                  alt="icon"
+                  alt="GitHub"
                 />
               </a>
               <a target="_blank" rel="noreferrer" href="mailto:sreejithsachu2002@gmail.com">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/gmailpic1.png"
-                  alt="icon"
+                  alt="Email"
                 />
               </a>
-              
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
@@ -204,13 +229,18 @@
         </div>
 
         <div class="main-footer__lower">
-          &copy; Copyright 2021. Made by
-          <a rel="noreferrer" target="_blank" href="#"
-            >S A Sreejith</a
-          >
+          &copy; Copyright 2024. Made by
+          <a rel="noreferrer" target="_blank" href="#">S A Sreejith</a>
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./index.js"></script>
+    <script src="./animations.js"></script>
   </body>
 </html>

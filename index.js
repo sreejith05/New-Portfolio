@@ -35,31 +35,3 @@ headerLogoContainer.addEventListener('click', () => {
   location.href = 'index.html';
 });
 
-// Dark Mode Toggle Functionality
-const modeToggleBtn = document.getElementById('mode-toggle');
-const modeIcon = document.getElementById('mode-icon');
-
-function darkMode(){
-modeToggleBtn.addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-
-  if (document.body.classList.contains('dark-mode')) {
-    localStorage.setItem('theme', 'dark');
-    modeIcon.src = './assets/svg/moon.svg';
-  } else {
-    localStorage.setItem('theme', 'light');
-    modeIcon.src = './assets/svg/sun.svg';
-  }
-});
-
-// Check the saved theme on page load
-window.addEventListener('load', function() {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.body.classList.add('dark-mode');
-    modeIcon.src = './assets/svg/moon.svg';
-  } else {
-    modeIcon.src = './assets/svg/sun.svg';
-  }
-});
-}

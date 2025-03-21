@@ -1,5 +1,5 @@
 {
-  "name": "Sreejith_Portfolio",
+  "name": "sreejith-portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
     "build": "npm-run-all prefix:css compress:css"
   },
-  "author": "",
+  "author": "Sreejith",
   "license": "GPL-3.0",
   "devDependencies": {
     "autoprefixer": "^10.3.1",

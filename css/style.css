@@ -303,8 +303,6 @@ textarea {
   width: 100%;
 }
 
-
-
 .home-hero__content {
   display: flex;
   align-items: center;
@@ -1083,11 +1081,13 @@ textarea {
   }
 }
 
-
 .experience__content {
-  max-width: 100%;
+  max-width: 100%; 
   margin: auto;
   margin-bottom: 6rem;
+  /* display:flex;
+  justify-content: space-evenly;
+  gap:1rem; */
 }
 
 .experience {
@@ -1112,7 +1112,7 @@ textarea {
 .experience__row-content-title {
   font-size: 2.4rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: #111;
 }
 
@@ -1163,4 +1163,183 @@ textarea {
   .experience__row-content-desc {
     font-size: 1.4rem;
   }
+}
+@media  only screen and (min-width: 1024px) {
+  
+  .experience__image {
+  float: right;
+  width: auto; 
+  height: auto;
+  margin-right: 8rem; 
+  border-radius:200px;
+  }
+  
+}
+.experience__image {
+  float: right;
+    width: 15%;
+    height:auto;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top:-6rem;
+    border-radius: .5rem;
+}
+.fade-in {
+  opacity: 0; /* Start invisible */
+  animation: fadeIn ease 2s forwards; /* Apply fadeIn animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start from transparent */
+  }
+  to {
+    opacity: 1; /* End at fully visible */
+  }
+}
+
+
+
+/* Fade In Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scroll Progress Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #0062b9;
+  width: 0;
+  z-index: 1100;
+}
+
+/* Cursor Trail */
+.cursor-trail {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(0, 98, 185, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+  z-index: 9999;
+}
+
+/* Skill Hover Animation */
+.skills__skill {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Project Hover Animation */
+.projects__row-img,
+.projects__row-content {
+  transition: transform 0.3s ease;
+}
+
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills__skill {
+  width: 80px;
+  height: 80px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skills__skill img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skills__skill:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.skills__skill:hover img {
+  transform: rotate(360deg);
+}
+
+/* Tooltip Styles */
+.skills__skill {
+  position: relative;
+}
+
+.skills__skill::after {
+  content: attr(data-skill);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.skills__skill:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+@media only screen and (min-width: 370px) and (max-width: 768px) {
+  /* .experience__content{
+    display:flex;
+    justify-content: space-between;
+  } */
+  .experience__image {
+    float: right;
+    width: 15%;
+    height:auto;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    margin-top:-6rem;
+    border-radius: 0.5rem;
+  }
+  
+}
+
+@media only screen and (min-width: 1024px) {
+  .experience__image {
+    float: right;
+      width: 30%;
+      height:auto;
+      margin-right: 1rem;
+      margin-bottom: 2rem;
+      margin-top:-7rem;
+      border-radius: 0.5rem;
+  }
+  
 }
