@@ -1314,14 +1314,14 @@ textarea {
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 768px) {
+@media only screen and (min-width: 290px) and (max-width: 768px) {
   .experience__image {
     float: right;
     width: 17%;
     height:auto;
     margin-right: 0.15rem;
     margin-bottom: 2rem;
-    margin-top:-7rem;
+    margin-top:-8rem;
     border-radius: 0.5rem;
   }
   .experience__row-content-company{
