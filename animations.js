@@ -194,17 +194,17 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollProgressBar();
   
     // Cursor trail effect
-    const createCursorTrail = () => {
-      const trail = document.createElement('div');
-      trail.classList.add('cursor-trail');
-      document.body.appendChild(trail);
+    // const createCursorTrail = () => {
+    //   const trail = document.createElement('div');
+    //   trail.classList.add('cursor-trail');
+    //   document.body.appendChild(trail);
   
-      document.addEventListener('mousemove', (e) => {
-        trail.style.left = `${e.clientX}px`;
-        trail.style.top = `${e.clientY}px`;
-      });
-    };
-    createCursorTrail();
+    //   document.addEventListener('mousemove', (e) => {
+    //     trail.style.left = `${e.clientX}px`;
+    //     trail.style.top = `${e.clientY}px`;
+    //   });
+    // };
+    // createCursorTrail();
 
 
 
@@ -263,6 +263,26 @@ const skillLogoAnimations = () => {
     });
   };
   
+  const form = document.getElementById("contact__form")
+const fname = document.getElementById("name").value
+const email = document.getElementById("email").value
+const description = document.getElementById("description").value
+const submitButton = document.getElementById("submit_button")
+
+submitButton.addEventListener("click",(event)=>{
+  event.preventDefault()
+  if(fname.value == "" || email.value == "" || description.value == "" ){
+    alert("Enter all the required details.")
+  }
+  else{
+    alert("Your proposal has been sent.")
+    fname=""
+    email=""
+    description=""
+    console.log("Clicked Submit button")
+  }
+  });
+
   document.addEventListener('DOMContentLoaded', () => {
     skillLogoAnimations();
     skillProgressionEffect();
