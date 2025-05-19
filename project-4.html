@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portfolio Website</title>
+    <title>ExpenzoX</title>
     <meta name="description" content="Case study page of Portfolio Website Project" />
 
     <link rel="stylesheet" href="css/style.css" />
@@ -84,14 +84,14 @@
     <!-- Hero Section with AOS Animations -->
     <section class="project-cs-hero" data-aos="fade-up" data-aos-duration="1000">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Portfolio Website</h1>
+        <h1 class="heading-primary">ExpenzoX</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            A comprehensive personal portfolio website showcasing skills, projects, and professional journey using modern web technologies.
+            A full-stack expense tracker app built to help users track income and expenses, visualize spending trends with Recharts, and download reports. 
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://sasreejith.netlify.app/" class="btn btn--bg" target="_blank">Live Website</a>
+          <a href="#" class="btn btn--bg" target="_blank">Project Details</a>
         </div>
       </div>
     </section>
@@ -101,13 +101,62 @@
       <div class="main-container">
         <div class="project-details__content">
           <!-- Project Showcase Image with Interaction -->
+  
           <div class="project-details__showcase-img-cont">
-            <img
-              src="./assets/jpeg/Portfolio.JPG"
-              alt="Portfolio Website Project"
-              class="project-details__showcase-img interactive-project-image"
-            />
-          </div>
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/Login.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/ExpenzoXDashboard.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/ExpenzoXDashboard2.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/ExpenzoXDashboard3.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/Income.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/Expense.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+  </div>
+  <!-- Dots/bullets/indicators -->
+  <div class="dots-container" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+</div>
 
           <div class="project-details__content-main">
             <!-- Project Overview -->
@@ -115,25 +164,25 @@
               <h3 class="project-details__content-title">Project Overview</h3>
               <p class="project-details__desc-para">
                 <strong>Project Purpose</strong><br>
-                Developed a modern, responsive personal portfolio website to showcase professional skills, projects, and personal brand. The website serves as a comprehensive digital resume and project showcase.
+                The Expense Tracker is a full-stack personal expense tracker application developed using the MERN stack. It empowers users to efficiently monitor their income and expenses, analyze spending patterns, and download financial records for offline use—all within a clean, intuitive, and responsive user interface.<br>
 
-                <strong>Key Objectives</strong>
-                - Create a visually appealing and professional online presence
-                - Demonstrate web development skills
-                - Provide easy access to projects and contact information
-                - Implement responsive and interactive design
-              </p>
-              <p class="project-details__desc-para">
-                <strong>Design and Development Approach</strong><br>
-                - Implemented a mobile-first, responsive design
-                - Used semantic HTML5 for structure
-                - Created custom CSS for styling and animations
-                - Developed interactive elements using JavaScript
-                - Ensured cross-browser compatibility
-                - Focused on performance and user experience
-              </p>
-            </div>
+                <strong>Key Features</strong><br>
+                <b>💳 Add, View & Delete Transactions:</b><br>
+Users can log income or expense entries with custom details like category, amount, date, and icons for better visual categorization.<br>
+<b>📊 Data Visualization:</b><br>
+Integrated Recharts to present bar graphs showing income vs. expense trends, making financial insights easy to interpret.<br>
+<b>📥 Downloadable Reports:</b><br>
+A one-click download option enables users to export their transaction history, supporting offline access and analysis.<br>
+<b>📱 Fully Responsive UI:</b><br>
+Designed using Tailwind CSS to ensure the app looks great and functions seamlessly across all device sizes—from mobile to desktop.<br>
+<b>🔐 Optional User Authentication:</b><br>
+Implemented JWT (JSON Web Token) for secure login and user session management in the advanced version.<br>
 
+<b>🎨 Custom Icons for Categories:</b><br>
+Added the ability to assign visual identifiers to transaction categories for faster recognition and better UI engagement.<br>
+                
+              </p>
+              
             <!-- Skills Used -->
             <div class="project-details__tools-used">
               <h3 class="project-details__content-title">Skills & Technologies</h3>
@@ -144,9 +193,9 @@
                     
                   </div>
                 </div>
-                <div class="skills__skill" data-skill="CSS">
+                <div class="skills__skill" data-skill="Tailwind CSS">
                   <div class="skills__skill-content">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/css3-11-1175239.png" alt="CSS">
+                    <img src="https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png" alt="Tailwind CSS">
                   </div>
                 </div>
                 <div class="skills__skill" data-skill="JavaScript">
@@ -154,30 +203,32 @@
                     <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-24-1174950.png" alt="JavaScript">
                   </div>
                 </div>
-                <div class="skills__skill" data-skill="SASS">
+                <div class="skills__skill" data-skill="React JS">
                   <div class="skills__skill-content">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/sass-226054.png" alt="SASS">
+                    <img src="https://static-00.iconduck.com/assets.00/react-icon-512x512-u6e60ayf.png" alt="React JS">
                   </div>
                 </div>
-                <div class="skills__skill" data-skill="GitHub">
+                <div class="skills__skill" data-skill="MongoDB">
                   <div class="skills__skill-content">
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/github-163-761603.png" alt="GitHub">
+                    <img src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg" alt="MongoDB">
                   </div>
                 </div>
+
+                <div class="skills__skill" data-skill="Postman">
+                  <div class="skills__skill-content">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmtT98yfidU8hGRVTgArB2jtr4hxWjvFYr4g&s" alt="Postman">
+                  </div>
+                </div>
+
               </div>
             </div>
 
             <!-- Project Links -->
             <div class="project-details__links">
               <h3 class="project-details__content-title">Project Resources</h3>
+             
               <a
-                href="https://sasreejith.netlify.app/"
-                class="btn btn--med btn--theme project-details__links-btn"
-                target="_blank"
-                >Live Website</a
-              >
-              <a
-                href="https://github.com/sreejith05/portfolio"
+                href="https://github.com/sreejith05/ExpenzoX"
                 class="btn btn--med btn--theme-inv project-details__links-btn"
                 target="_blank"
                 >Source Code</a

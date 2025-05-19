@@ -103,7 +103,7 @@
       <div class="main-container">
         <div class="project-details__content">
           <!-- Project Showcase Image with Interaction -->
-          <div class="project-details__showcase-img-cont">
+          <!-- <div class="project-details__showcase-img-cont">
             <img
               src="./assets/jpeg/Dashboard1.JPG"
               alt="Pizza Sales Analysis Dashboard"
@@ -114,7 +114,31 @@
               alt="Pizza Sales Analysis Dashboard"
               class="project-details__showcase-img interactive-project-image"
             />
-          </div>
+          </div> -->
+
+          <div class="project-details__showcase-img-cont">
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/Dashboard1.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+    <div class="slide fade">
+      <img
+        src="./assets/jpeg/Dashboard2.JPG"
+        alt="Pizza Sales Analysis Dashboard"
+        class="project-details__showcase-img interactive-project-image"
+      />
+    </div>
+  </div>
+  <!-- Dots/bullets/indicators -->
+  <div class="dots-container" style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+  </div>
+</div>
 
           <div class="project-details__content-main">
             <!-- Project Overview -->
